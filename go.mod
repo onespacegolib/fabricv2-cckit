@@ -1,4 +1,4 @@
-module git.onespace.co.th/osgolib/fabricv2-cckit
+module github.com/onespacegolib/fabricv2-cckit
 
 go 1.15
 
