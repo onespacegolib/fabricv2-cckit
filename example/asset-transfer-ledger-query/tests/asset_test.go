@@ -14,6 +14,7 @@ const ASSET = `asset`
 func TestCreateAsset(t *testing.T) {
 	res = cc.Invoke(testcc.MakeFunction(ASSET, `create`), "asset1", "blue", "5", "tom", "35")
 	helper.PlayRes(res)
+	println(res.Message)
 	//res = cc.Query(testcc.MakeFunction(ASSET, `get[id]`), "asset1")
 	//helper.PlayRes(res)
 	//res = cc.Invoke(testcc.MakeFunction(ASSET, `put`), "asset1")

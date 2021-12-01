@@ -6,7 +6,7 @@ import (
 )
 
 type (
-	ChainList         []string
+	ChainList         [][]string
 	ChainCompositeKey interface {
 		Create(args ...string) ChainCompositeKey
 		Error() error
