@@ -3,9 +3,9 @@ package response
 import (
 	"errors"
 	"fmt"
-	"git.onespace.co.th/osgolib/fabricv2-cckit/convert"
 	"github.com/hyperledger/fabric-chaincode-go/shim"
 	"github.com/hyperledger/fabric-protos-go/peer"
+	"github.com/onespacegolib/fabricv2-cckit/convert"
 )
 
 func Error(err interface{}) peer.Response {

@@ -3,8 +3,8 @@ package flannel
 import (
 	"errors"
 	"fmt"
-	"git.onespace.co.th/osgolib/fabricv2-cckit/convert"
 	"github.com/fatih/structs"
+	"github.com/onespacegolib/fabricv2-cckit/convert"
 	"strconv"
 )
 

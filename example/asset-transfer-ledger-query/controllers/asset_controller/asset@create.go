@@ -1,10 +1,10 @@
 package asset_controller
 
 import (
-	"git.onespace.co.th/osgolib/fabricv2-cckit/constant"
-	"git.onespace.co.th/osgolib/fabricv2-cckit/example/asset-transfer-ledger-query/models"
-	"git.onespace.co.th/osgolib/fabricv2-cckit/flannel"
-	"git.onespace.co.th/osgolib/fabricv2-cckit/router"
+	"github.com/onespacegolib/fabricv2-cckit/constant"
+	"github.com/onespacegolib/fabricv2-cckit/example/asset-transfer-ledger-query/models"
+	"github.com/onespacegolib/fabricv2-cckit/flannel"
+	"github.com/onespacegolib/fabricv2-cckit/router"
 	"net/http"
 )
 

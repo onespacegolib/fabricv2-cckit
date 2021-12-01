@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"git.onespace.co.th/osgolib/fabricv2-cckit/example/asset-transfer-ledger-query/routers"
 	"github.com/hyperledger/fabric-chaincode-go/shim"
+	"github.com/onespacegolib/fabricv2-cckit/example/asset-transfer-ledger-query/routers"
 )
 
 func main() {

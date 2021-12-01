@@ -1,7 +1,7 @@
 package flannel
 
 import (
-	"git.onespace.co.th/osgolib/fabricv2-cckit/router"
+	"github.com/onespacegolib/fabricv2-cckit/router"
 )
 
 func Router(r *router.Group) {

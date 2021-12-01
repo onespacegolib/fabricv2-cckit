@@ -3,8 +3,8 @@ package flannel
 import (
 	"encoding/json"
 	"fmt"
-	"git.onespace.co.th/osgolib/fabricv2-cckit/constant"
-	"git.onespace.co.th/osgolib/fabricv2-cckit/router"
+	"github.com/onespacegolib/fabricv2-cckit/constant"
+	"github.com/onespacegolib/fabricv2-cckit/router"
 	"net/http"
 )
 

@@ -1,9 +1,9 @@
 package models
 
 import (
-	"git.onespace.co.th/osgolib/fabricv2-cckit/example/asset-transfer-ledger-query/config"
-	"git.onespace.co.th/osgolib/fabricv2-cckit/flannel"
-	"git.onespace.co.th/osgolib/fabricv2-cckit/router"
+	"github.com/onespacegolib/fabricv2-cckit/example/asset-transfer-ledger-query/config"
+	"github.com/onespacegolib/fabricv2-cckit/flannel"
+	"github.com/onespacegolib/fabricv2-cckit/router"
 )
 
 type Asset struct {

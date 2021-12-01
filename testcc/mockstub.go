@@ -4,12 +4,12 @@ import (
 	"container/list"
 	"crypto/rand"
 	"fmt"
-	"git.onespace.co.th/osgolib/fabricv2-cckit/convert"
 	"github.com/hyperledger/fabric-chaincode-go/shim"
 	"github.com/hyperledger/fabric-chaincode-go/shimtest"
 	"github.com/hyperledger/fabric-protos-go/ledger/queryresult"
 	"github.com/hyperledger/fabric-protos-go/peer"
 	"github.com/hyperledger/fabric/msp"
+	"github.com/onespacegolib/fabricv2-cckit/convert"
 	"strings"
 	"unicode/utf8"
 

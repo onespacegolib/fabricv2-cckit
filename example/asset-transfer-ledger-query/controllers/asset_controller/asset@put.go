@@ -1,8 +1,8 @@
 package asset_controller
 
 import (
-	"git.onespace.co.th/osgolib/fabricv2-cckit/example/asset-transfer-ledger-query/models"
-	"git.onespace.co.th/osgolib/fabricv2-cckit/router"
+	"github.com/onespacegolib/fabricv2-cckit/example/asset-transfer-ledger-query/models"
+	"github.com/onespacegolib/fabricv2-cckit/router"
 )
 
 func Put(c router.Context) (interface{}, error) {

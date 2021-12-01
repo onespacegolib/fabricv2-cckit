@@ -1,11 +1,11 @@
 package routers
 
 import (
-	"git.onespace.co.th/osgolib/fabricv2-cckit/example/asset-transfer-ledger-query/config"
-	"git.onespace.co.th/osgolib/fabricv2-cckit/example/asset-transfer-ledger-query/controllers/asset_controller"
-	"git.onespace.co.th/osgolib/fabricv2-cckit/example/asset-transfer-ledger-query/controllers/init_controller"
-	"git.onespace.co.th/osgolib/fabricv2-cckit/flannel"
-	"git.onespace.co.th/osgolib/fabricv2-cckit/router"
+	"github.com/onespacegolib/fabricv2-cckit/example/asset-transfer-ledger-query/config"
+	"github.com/onespacegolib/fabricv2-cckit/example/asset-transfer-ledger-query/controllers/asset_controller"
+	"github.com/onespacegolib/fabricv2-cckit/example/asset-transfer-ledger-query/controllers/init_controller"
+	"github.com/onespacegolib/fabricv2-cckit/flannel"
+	"github.com/onespacegolib/fabricv2-cckit/router"
 )
 
 var r = router.New(config.ChaincodeName)

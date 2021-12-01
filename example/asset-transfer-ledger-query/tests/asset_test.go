@@ -2,10 +2,10 @@ package tests
 
 import (
 	"fmt"
-	"git.onespace.co.th/osgolib/fabricv2-cckit/flannel"
-	"git.onespace.co.th/osgolib/fabricv2-cckit/helper"
-	"git.onespace.co.th/osgolib/fabricv2-cckit/testcc"
 	"github.com/fatih/structs"
+	"github.com/onespacegolib/fabricv2-cckit/flannel"
+	"github.com/onespacegolib/fabricv2-cckit/helper"
+	"github.com/onespacegolib/fabricv2-cckit/testcc"
 	"testing"
 )
 

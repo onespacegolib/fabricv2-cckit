@@ -3,31 +3,30 @@ package router
 import (
 	"errors"
 	"fmt"
-	"git.onespace.co.th/osgolib/fabricv2-cckit/response"
 	"github.com/hyperledger/fabric-chaincode-go/shim"
 	"github.com/hyperledger/fabric-protos-go/peer"
+	"github.com/onespacegolib/fabricv2-cckit/response"
 )
 
 // v0.1.0 OSP
 type (
-	MethodType string
+	MethodType         string
 	ContextHandlerFunc func(Context) peer.Response
-	HandlerFunc func(Context) (interface{}, error)
-	HandlerMeta struct {
-		Hdl  HandlerFunc
-		Type MethodType
+	HandlerFunc        func(Context) (interface{}, error)
+	HandlerMeta        struct {
+		Hdl         HandlerFunc
+		Type        MethodType
 		ReqValidate interface{}
 	}
 
 	RequestMiddleware func(HandlerFunc, ...int) HandlerFunc
 
 	Group struct {
-		prefix string
-		handlers        map[string]*HandlerMeta
-		chaincodeName 	string
+		prefix        string
+		handlers      map[string]*HandlerMeta
+		chaincodeName string
 
 		requestMiddleware []RequestMiddleware
-
 	}
 
 	Router interface {
@@ -40,7 +39,7 @@ type (
 
 func (g *Group) Group(path string) *Group {
 	return &Group{
-		prefix: g.prefix + path,
+		prefix:   g.prefix + path,
 		handlers: g.handlers,
 	}
 }
@@ -62,16 +61,15 @@ func (g *Group) Init(handler HandlerFunc) *Group {
 }
 
 func (g *Group) Invoke(path string, handler HandlerFunc, requestValidate interface{}) *Group {
-	return g.addHandler(`invoke`, `@` + path, handler, requestValidate)
+	return g.addHandler(`invoke`, `@`+path, handler, requestValidate)
 }
 
 func (g *Group) Query(path string, handler HandlerFunc, requestValidate interface{}) *Group {
-	return g.addHandler(`query`, `@` + path, handler, requestValidate)
+	return g.addHandler(`query`, `@`+path, handler, requestValidate)
 }
 
-
 func (g *Group) addHandler(t MethodType, path string, handler HandlerFunc, requestValidate interface{}) *Group {
-	g.handlers[g.prefix +  path] = &HandlerMeta{
+	g.handlers[g.prefix+path] = &HandlerMeta{
 		Type: t,
 		Hdl: func(context Context) (interface{}, error) {
 			h := handler
@@ -81,7 +79,6 @@ func (g *Group) addHandler(t MethodType, path string, handler HandlerFunc, reque
 	}
 	return g
 }
-
 
 func (g *Group) HandleInit(stub shim.ChaincodeStubInterface) peer.Response {
 	h := g.buildHandler()
@@ -130,7 +127,6 @@ func (g *Group) Context(stub shim.ChaincodeStubInterface) Context {
 
 func NewContext(stub shim.ChaincodeStubInterface) *context {
 	return &context{
-		stub:   stub,
+		stub: stub,
 	}
 }
-

@@ -3,10 +3,10 @@ package router
 import (
 	"encoding/json"
 	"fmt"
-	"git.onespace.co.th/osgolib/fabricv2-cckit/constant"
-	"git.onespace.co.th/osgolib/fabricv2-cckit/request"
 	"github.com/fatih/structs"
 	"github.com/hyperledger/fabric-chaincode-go/shim"
+	"github.com/onespacegolib/fabricv2-cckit/constant"
+	"github.com/onespacegolib/fabricv2-cckit/request"
 )
 
 type (
