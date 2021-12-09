@@ -5,7 +5,6 @@ import (
 	"github.com/onespacegolib/fabricv2-cckit/example/asset-transfer-ledger-query/models"
 	"github.com/onespacegolib/fabricv2-cckit/flannel"
 	"github.com/onespacegolib/fabricv2-cckit/router"
-	"net/http"
 )
 
 func Create(c router.Context) (interface{}, error) {
@@ -46,6 +45,6 @@ func Create(c router.Context) (interface{}, error) {
 	return c.JSON(constant.ApiResult{
 		Result:      assetRes,
 		Message:     ``,
-		MessageCode: http.StatusBadRequest,
+		MessageCode: 200,
 	})
 }

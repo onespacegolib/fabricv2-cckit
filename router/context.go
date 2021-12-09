@@ -48,7 +48,8 @@ func (c *context) JSON(r constant.ApiResult) (interface{}, error) {
 	if _, ok := rMap[`path`]; !ok {
 		rMap[`path`] = c.Path()
 	}
-	return rMap, nil
+	val, _ := json.Marshal(r)
+	return string(val), nil
 }
 
 func (c *context) Stub() shim.ChaincodeStubInterface {
